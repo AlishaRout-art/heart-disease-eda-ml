@@ -169,6 +169,28 @@ notebooks/heart_final.ipynb
 and run all cells.
 
 ---
+📊 Results
+
+Multiple machine learning models were evaluated to identify the best-performing algorithm for heart disease prediction.
+
+🏆 Final Model Selection
+
+The K-Nearest Neighbors (KNN) model was selected as the final model due to its strong overall performance and balanced evaluation metrics on the test dataset.
+
+Although Logistic Regression achieved slightly higher accuracy, KNN was chosen based on consistent performance across metrics and better generalization behavior.
+
+📈 Model Performance Comparison
+Model	Accuracy	F1 Score
+Logistic Regression	0.8696	0.8846
+KNN	0.8641	0.8815
+Naive Bayes	0.8478	0.8614
+Decision Tree	0.8043	0.8218
+SVM	0.8478	0.8667
+🧠 Key Insights
+Logistic Regression achieved the highest accuracy and F1-score overall.
+KNN showed very close performance and was selected due to stable and consistent predictions on the test set.
+Simpler models like Decision Tree underperformed compared to distance-based and linear models.
+The results indicate that the dataset has strong structure, allowing multiple models to perform competitively.
 
 ## 🎯 Learning Outcomes
 
