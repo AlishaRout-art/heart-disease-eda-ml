@@ -79,9 +79,9 @@ st.markdown("""
 # -----------------------------
 # LOAD FILES
 # -----------------------------
-model = joblib.load("knn_heart_model.pkl")
-scaler = joblib.load("heart_scaler.pkl")
-expected_columns = joblib.load("heart_columns.pkl")
+model = joblib.load("pkl_files/knn_heart_model.pkl")
+scaler = joblib.load("pkl_files/heart_scaler.pkl")
+expected_columns = joblib.load("pkl_files/heart_columns.pkl")
 
 # -----------------------------
 # SIDEBAR
