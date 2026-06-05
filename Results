@@ -1,6 +1,0 @@
-                 Model  Accuracy  F1 Score
-0  logistic Regression    0.8696    0.8846
-1                  KNN    0.8641    0.8815
-2          Naive Byeas    0.8478    0.8614
-3        Decision tree    0.8043    0.8218
-4                  SVM    0.8478    0.8667
