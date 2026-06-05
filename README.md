@@ -99,17 +99,6 @@ The following analyses were performed:
 - Outlier Detection
 - Target Variable Analysis
 
-### Sample Visualizations
-
-#### Correlation Heatmap
-
-![Correlation Heatmap](images/correlation_heatmap.png)
-
-#### Heart Disease Distribution
-
-![Target Distribution](images/target_distribution.png)
-
----
 
 ## ⚙️ Data Preprocessing
 
