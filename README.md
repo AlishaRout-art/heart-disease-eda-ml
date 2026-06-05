@@ -76,7 +76,7 @@ The dataset contains medical attributes such as:
 ---
 
 ## 🔧 Technologies Used
-
+-Streamlit
 - Python
 - Jupyter Notebook
 - Pandas
