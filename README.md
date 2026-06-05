@@ -1,30 +1,30 @@
-# ❤️ Heart Disease Prediction using Machine Learning
+❤️ Heart Disease Risk Prediction using Machine Learning
 
-A machine learning project that analyzes patient health records and predicts the likelihood of heart disease using various clinical attributes.
+An end-to-end Machine Learning system that analyzes patient clinical data to predict the likelihood of heart disease. The project covers the complete ML lifecycle including data preprocessing, exploratory data analysis, model building, evaluation, and deployment as an interactive web application.
 
----
+🚀 Live Demo
 
-## 📖 Project Overview
+👉 Try the deployed application here:
+https://heart-disease-eda-ml-dh7vah2lgmvkhaykzdbdm7.streamlit.app/
 
-Heart disease is one of the leading causes of death worldwide. Early prediction can help healthcare professionals identify high-risk patients and take preventive measures.
+📌 Project Summary
 
-In this project, I performed:
+Cardiovascular diseases remain one of the leading causes of death globally. Early detection using machine learning can assist in identifying high-risk individuals and supporting preventive healthcare decisions.
 
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Feature Engineering
-- Feature Scaling
-- Machine Learning Model Training
-- Model Evaluation
+This project builds a predictive classification system that estimates whether a patient is at risk of heart disease based on key medical attributes.
 
-This project was developed as part of my Machine Learning learning journey.
+The workflow follows a complete end-to-end data science pipeline used in real-world ML applications.
 
----
-
-## 📂 Repository Structure
-
-```text
+⚙️ ML Pipeline Overview
+Data Collection & Understanding
+Data Cleaning & Preprocessing
+Exploratory Data Analysis (EDA)
+Feature Engineering
+Feature Scaling & Encoding
+Model Training & Comparison
+Performance Evaluation
+Model Selection & Deployment
+📂 Project Structure
 heart-disease-eda-ml/
 │
 ├── data/
@@ -38,165 +38,130 @@ heart-disease-eda-ml/
 ├── notebooks/
 │   └── heart_final.ipynb
 │
-├── README.md
+├── app.py                      # Streamlit web application
+├── knn_heart_model.pkl        # Trained ML model (deployment artifact)
 ├── requirements.txt
+├── README.md
 └── .gitignore
-```
+📊 Dataset Description
 
----
+The dataset contains clinical parameters used for predicting heart disease risk.
 
-## 📊 Dataset Information
+Feature	Description
+Age	Age of the patient
+Sex	Gender
+ChestPainType	Type of chest pain
+RestingBP	Resting blood pressure
+Cholesterol	Serum cholesterol level
+FastingBS	Fasting blood sugar
+RestingECG	ECG results at rest
+MaxHR	Maximum heart rate achieved
+ExerciseAngina	Exercise-induced angina
+Oldpeak	ST depression induced by exercise
+ST_Slope	Slope of peak exercise ST segment
+HeartDisease	Target variable
+🎯 Target Definition
+0 → No Heart Disease
+1 → Heart Disease Present
+🧠 Machine Learning Models
 
-The dataset contains medical attributes such as:
+The following classification models were implemented and compared:
 
-| Feature | Description |
-|----------|-------------|
-| Age | Patient's age |
-| Sex | Gender |
-| ChestPainType | Type of chest pain |
-| RestingBP | Resting blood pressure |
-| Cholesterol | Serum cholesterol level |
-| FastingBS | Fasting blood sugar |
-| RestingECG | Resting ECG results |
-| MaxHR | Maximum heart rate achieved |
-| ExerciseAngina | Exercise-induced angina |
-| Oldpeak | ST depression induced by exercise |
-| ST_Slope | Slope of peak exercise ST segment |
-| HeartDisease | Target variable |
+Logistic Regression (Baseline + Interpretable)
+Decision Tree Classifier
+Random Forest Classifier (Best Performing)
+📈 Model Evaluation
 
-### Target Variable
+Models were evaluated using standard classification metrics:
 
-- **0** → No Heart Disease
-- **1** → Heart Disease Present
+Accuracy Score
+Precision
+Recall
+F1 Score
+Confusion Matrix
+🏆 Key Insight:
 
----
+Ensemble-based models (Random Forest) performed better due to their ability to handle non-linear relationships in medical data.
 
-## 🔧 Technologies Used
+📊 Exploratory Data Analysis (EDA)
 
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
+Key analyses performed:
 
----
+Missing Value Analysis
+Duplicate Detection
+Statistical Summary
+Correlation Analysis
+Feature Distribution Analysis
+Outlier Detection
+Target Class Balance Analysis
+📌 Visual Insights
 
-## 📈 Exploratory Data Analysis
+Correlation Heatmap
 
-The following analyses were performed:
 
-- Missing Value Analysis
-- Duplicate Data Check
-- Statistical Summary
-- Correlation Analysis
-- Distribution Analysis
-- Outlier Detection
-- Target Variable Analysis
+Target Distribution
 
-### Sample Visualizations
 
-#### Correlation Heatmap
-
-![Correlation Heatmap](images/correlation_heatmap.png)
-
-#### Heart Disease Distribution
-
-![Target Distribution](images/target_distribution.png)
-
----
-
-## ⚙️ Data Preprocessing
+🧹 Data Preprocessing
 
 The following preprocessing techniques were applied:
 
-- Handling Missing Values
-- Encoding Categorical Variables
-- Feature Scaling using StandardScaler
-- Train-Test Split
+Handling missing values
+Encoding categorical variables
+Feature scaling using StandardScaler
+Train-test splitting
+🌐 Web Application (Deployment)
 
----
+The trained model is deployed as an interactive web application using Streamlit.
 
-## 🤖 Machine Learning
-
-### Models Used
-
-- Logistic Regression
-- Decision Tree Classifier
-- Random Forest Classifier
-
-### Evaluation Metrics
-
-- Accuracy Score
-- Precision Score
-- Recall Score
-- F1 Score
-- Confusion Matrix
-
----
-
-## 🚀 How to Run
-
-### Clone the Repository
-
-```bash
+Features of the App:
+Real-time prediction of heart disease risk
+User-friendly medical input form
+Instant classification output
+Probability-based risk estimation
+Deployment Workflow:
+Code pushed to GitHub
+Connected to Streamlit Cloud
+Configured app.py as entry point
+Installed dependencies via requirements.txt
+Successfully deployed as a live application
+🚀 How to Run Locally
+1. Clone the Repository
 git clone https://github.com/AlishaRout-art/heart-disease-eda-ml.git
-```
-
-### Install Dependencies
-
-```bash
+cd heart-disease-eda-ml
+2. Install Dependencies
 pip install -r requirements.txt
-```
-
-### Launch Jupyter Notebook
-
-```bash
+3. Run Jupyter Notebook
 jupyter notebook
-```
 
 Open:
 
-```text
 notebooks/heart_final.ipynb
-```
+💻 Run Web App Locally
+streamlit run app.py
+🔮 Future Enhancements
+Hyperparameter tuning using GridSearchCV
+Cross-validation for robust evaluation
+SHAP-based explainability (feature impact visualization)
+Add prediction history tracking
+Deploy backend API using FastAPI
+Integrate database for storing predictions
+🎯 Key Learnings
 
-and run all cells.
+This project helped me gain hands-on experience in:
 
----
+End-to-end Machine Learning workflow design
+Data preprocessing and feature engineering
+Model selection and evaluation strategies
+Real-world dataset handling
+Web deployment using Streamlit
+GitHub project structuring for portfolio readiness
+👨‍💻 Author
 
-## 🎯 Learning Outcomes
+Alisha Rout
+B.Tech Computer Science Engineering
 
-Through this project, I learned:
-
-- Data Cleaning Techniques
-- Exploratory Data Analysis
-- Data Visualization
-- Feature Engineering
-- Machine Learning Workflow
-- Model Evaluation
-- GitHub Project Organization
-
----
-
-## 🔮 Future Improvements
-
-- Hyperparameter Tuning
-- Cross Validation
-- Feature Selection
-- Model Deployment using Flask/FastAPI
-- Interactive Dashboard
-
----
-
-## 👩‍💻 Author
-
-**Alisha Rout**
-
-B.Tech CSE Student  
-Interested in Data Engineering, Machine Learning, and Software Development
-
----
-
-⭐ If you found this project useful, consider giving it a star.
+Interests:
+Machine Learning 🤖
+Data Science 📊
+Software Development 💻
